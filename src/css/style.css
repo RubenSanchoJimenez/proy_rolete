@@ -1,4 +1,120 @@
 /* Estilo utilizado para el diseño del proyecto Chaos Dungeoon */
 
+/* Importar fuestes de letras */
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+    /* font-family: 'Bungee Spice', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+    /* font-family: 'Bree Serif', serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+    /* font-family: 'Cinzel', serif; */
+
 /* Layout principal */
 
+html, body{
+    margin: 0px;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+    position: relative;
+    font-family: 'Cinzel', serif;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url("../img/fondo_menu.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    filter: blur(2px);
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    height: 100vh;
+    overflow: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+    -ms-overflow-style: none;
+}
+
+main::-webkit-scrollbar {
+    width: 0px;
+}
+
+main::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+main::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+/* Vista inicial */
+
+#menu_inicio {
+
+}
+
+#inicio_aventura{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#inicio_aventura img{
+    width: auto;
+    max-height: 40vh;
+}
+
+#inicio_aventura div{
+    width: 50%;
+    height: 15vh;
+    font-family: 'Bungee Spice', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+#inicio_aventura a{
+    position: relative;
+    
+}
+
+#inicio_aventura a img{
+    width: 100%;
+}
+
+#inicio_aventura a h3{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: black;
+}
+
+#inicio_sesion{
+    display: none;
+}
