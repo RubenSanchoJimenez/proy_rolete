@@ -25,23 +25,9 @@ body {
     font-family: 'Cinzel', serif;
     margin: 0px;
     padding: 0px;
-    cursor: url('../img/cursor.png'), auto;
-    
-}
-
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
-    background-image: url("../img/fondo_menu.webp");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    filter: blur(2px);
+    cursor: url('../img/cursor.png'), auto;
 }
 
 main {
@@ -155,6 +141,26 @@ footer{
 }
 
 /* Vista inicial */
+
+#fondo_menu_inicio {
+    color: white;
+    position: relative;
+}
+
+#fondo_menu_inicio::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url("../img/fondo_menu.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    filter: blur(2px);
+}
 
 #inicio_aventura{
     height: 100vh;
@@ -293,3 +299,6 @@ nav button{
 #inicio_sesion h5{
     margin-bottom: 5px;
 }
+
+/* vista sesión */
+
