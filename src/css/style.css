@@ -203,23 +203,26 @@ footer{
     border-radius: 20px;
 }
 
-#inicio_aventura a{
+#inicio_aventura button{
     position: relative;
+    background-color: transparent;
+    border-color: transparent;
     
 }
 
-#inicio_aventura a img{
+#inicio_aventura button img{
     width: 100%;
 }
 
-#inicio_aventura a h3{
+#inicio_aventura button h3{
     position: absolute;
-    top: 25%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-transform: uppercase;
     font-weight: bolder;
     color: black;
+    font-size: large;
 }
 
 #contenedor_info_inicio{

@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Chaos Dungeoon</title>
         <link rel="stylesheet" href="css/style.css">
+        <script type="module" src="js/controlador/c_menu_inicio.js"></script>
     </head>
     <body>
         <div id="fondo_menu_inicio">
@@ -14,7 +15,7 @@
                     <div>
                         <h2>¡¡ Bienvenido a la mazmorra del caos !!</h2>
                     </div>
-                    <a><img src="img/letrero.png"><h3>Iniciar aventura</h3></a>
+                    <button><img src="img/letrero.png"><h3>Iniciar aventura</h3></button>
                 </div>
                 <div id="info_aventura">
                     <div class="letrero">
