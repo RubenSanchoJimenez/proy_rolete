@@ -73,6 +73,14 @@ input[type="text"]:hover {
     cursor: url('../img/cursor_escribir.png'), auto;
 }
 
+button:hover{
+    cursor: url('../img/cursor_url.png'), auto;
+}
+
+button{
+    font-family: 'Cinzel', serif;
+}
+
 footer{
     background-color: black;
     display: flex;
@@ -149,7 +157,7 @@ footer{
 /* Vista inicial */
 
 #menu_inicio{
-    padding: 0;
+    display: none;
 }
 
 #inicio_aventura{
@@ -161,7 +169,7 @@ footer{
     margin-bottom: 5vh;
 }
 
-#inicio_aventura  article img{
+#inicio_aventura article img{
     width: auto;
     max-height: 40vh;
 }
@@ -204,5 +212,88 @@ footer{
 }
 
 #inicio_sesion{
-    display: none;
+    
+}
+
+nav{
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    padding: 0px 5%;
+}
+
+nav button{
+    height: 5vh;
+    padding: 0px 1%;
+    border-radius: 10px;
+    border-color: transparent;
+}
+
+#contenedor_inicio_sesion{
+    height: 93vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contenedor_inicio_sesion img{
+    width: 300px;
+}
+
+#inicio_sesion section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 80%;
+}
+
+#inicio_sesion form{
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1%;
+}
+
+#inicio_sesion form img{
+    width: 100%;
+    height: 50px;
+}
+
+#inicio_sesion form button{
+    position: relative;
+    background-color: transparent;
+    border-color: transparent;
+    width: 80%;
+}
+
+#inicio_sesion form h3{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bolder;
+}
+
+#inicio_sesion form div{
+    width: 70%;
+}
+
+#inicio_sesion form input[type="text"]{
+    padding-left: 2%;
+    font-family: 'Cinzel', serif;
+    font-weight: bolder;
+    width: 100%;
+}
+
+#inicio_sesion form input{
+    background-color: rgba(255, 255, 255, 0.6);
+    border-color: transparent;
+    border-radius: 5px;
+}
+
+#inicio_sesion h5{
+    margin-bottom: 5px;
 }
