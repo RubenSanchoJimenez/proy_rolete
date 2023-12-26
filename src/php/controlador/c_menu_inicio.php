@@ -6,7 +6,7 @@ class Controlador {
     public $vista;
 
     public function __construct() {
-        $this->modelo = new Model();
+        $this->modelo = new Modelo();
         $this->vista = "v_menu_inicio";
     }
 

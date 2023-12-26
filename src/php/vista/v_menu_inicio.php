@@ -6,6 +6,7 @@
         <title>Chaos Dungeoon</title>
         <link rel="stylesheet" href="css/style.css">
         <script type="module" src="js/controlador/c_menu_inicio.js"></script>
+        <script src="https://kit.fontawesome.com/a0185357ca.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div id="fondo_menu_inicio">
@@ -93,7 +94,7 @@
                 </footer>
             </main>
             <main id="inicio_sesion">
-                <nav><button>Pito</button></nav>
+                <nav><button><i class="fa-solid fa-dungeon fa-2xl" style="color: #ffffff;"></i></button></nav>
                 <div id="contenedor_inicio_sesion">
                     <img src="img/logo_sin_fondo.png">
                     <section>
