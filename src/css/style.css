@@ -156,10 +156,6 @@ footer{
 
 /* Vista inicial */
 
-#menu_inicio{
-    display: none;
-}
-
 #inicio_aventura{
     height: 100vh;
     display: flex;
@@ -212,7 +208,7 @@ footer{
 }
 
 #inicio_sesion{
-    
+    display: none;
 }
 
 nav{
@@ -266,7 +262,7 @@ nav button{
     position: relative;
     background-color: transparent;
     border-color: transparent;
-    width: 80%;
+    width: 70%;
 }
 
 #inicio_sesion form h3{
@@ -278,7 +274,7 @@ nav button{
 }
 
 #inicio_sesion form div{
-    width: 70%;
+    width: 50%;
 }
 
 #inicio_sesion form input[type="text"]{
