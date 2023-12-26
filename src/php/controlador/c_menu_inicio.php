@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__.'/../modelo/m_menu_inicio.php';
 
-class Controller {
+class Controlador {
     public $modelo;
     public $vista;
 
