@@ -30,6 +30,21 @@ body {
     cursor: url('../img/cursor.png'), auto;
 }
 
+nav{
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    padding: 0px 5%;
+}
+
+nav button{
+    height: 5vh;
+    padding: 0px 1%;
+    border-radius: 10px;
+    border-color: transparent;
+    margin: 0px 1%;
+}
+
 main {
     height: 100vh;
     overflow: scroll;
@@ -217,20 +232,6 @@ footer{
     display: none;
 }
 
-nav{
-    height: 7vh;
-    display: flex;
-    align-items: center;
-    padding: 0px 5%;
-}
-
-nav button{
-    height: 5vh;
-    padding: 0px 1%;
-    border-radius: 10px;
-    border-color: transparent;
-}
-
 #contenedor_inicio_sesion{
     height: 93vh;
     display: flex;
@@ -302,3 +303,107 @@ nav button{
 
 /* vista sesión */
 
+#fondo_sesion{
+    background-image: url("../img/fondo_sesion.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+#sesion_jugador nav{
+    position: relative;
+}
+
+#sesion_jugador nav div{
+    position: absolute;
+    right: 0;
+    width: 150px;
+    background-color: rgba(255, 255, 255, 0.6);
+    height: 4vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 5%;
+    justify-content: center
+}
+
+#sesion_jugador nav div p{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    justify-content: flex-end;
+    height: 4vh;
+    width: 85%;
+    border-radius: 5px;
+    text-align: right;
+    padding-right: 10%;
+    font-family: 'Bungee Spice', cursive;
+
+}
+
+#sesion_jugador nav img {
+    height: 6.5vh;
+    position: absolute;
+    right: calc(110px + 5%);
+}
+
+#sesion_jugador main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 93vh;
+    position: relative;
+}
+
+#sesion_jugador main img{
+    width: 35%;
+}
+
+#sesion_jugador article{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    bottom: 10%;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sesion_jugador article img{
+    width: 20vh;
+}
+
+#sesion_jugador article p{
+    margin: 1vh 0px;
+}
+
+#sesion_jugador section{
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+#sesion_jugador section button{
+    position: relative;
+    background-color: transparent;
+    border-color: transparent;
+    width: 400px;
+}
+
+#sesion_jugador section img{
+    width: 100%;
+}
+
+#sesion_jugador section h3{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bolder;
+}
