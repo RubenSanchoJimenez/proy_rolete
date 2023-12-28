@@ -39,10 +39,10 @@ nav{
 
 nav button{
     height: 5vh;
-    padding: 0px 1%;
+    padding: 0px 10px;
     border-radius: 10px;
     border-color: transparent;
-    margin: 0px 1%;
+    margin: 0px 1vh;
     background-color: red;
     border-color: white;
     box-shadow: 5px 5px 10px black;
@@ -77,7 +77,7 @@ a:hover{
     cursor: url('../img/cursor_url.png'), auto;
 }
 
-input[type="text"]:hover {
+input[type="text"]:hover, input[type="password"]:hover {
     cursor: url('../img/cursor_escribir.png'), auto;
 }
 
@@ -294,7 +294,7 @@ footer{
     width: 50%;
 }
 
-#inicio_sesion form input[type="text"]{
+#inicio_sesion form input[type="text"], input[type="password"]{
     padding-left: 2%;
     font-family: 'Cinzel', serif;
     font-weight: bolder;

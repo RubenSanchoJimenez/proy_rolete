@@ -5,13 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Chaos Dungeoon</title>
         <link rel="stylesheet" href="css/style.css">
+        <script src="https://kit.fontawesome.com/a0185357ca.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div id="fondo_sesion">
             <main id="sesion_jugador">
                 <nav>
-                    <button></button>
-                    <button></button>
+                    <a href="index.php"><button><i class="fa-solid fa-dungeon fa-2xl" style="color: #ffffff;"></i></button></a>
+                    <button><i class="fa-solid fa-trash-can fa-2xl" style="color: #ffffff;"></i></button>
                     <div>
                         <p>9999999</p>
                     </div>

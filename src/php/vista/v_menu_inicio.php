@@ -98,33 +98,33 @@
                 <div id="contenedor_inicio_sesion">
                     <img src="img/logo_sin_fondo.png">
                     <section>
-                        <form>
+                        <form method="post" autocomplete="off" action="php/controlador/c_registro.php">
                             <div>
                                 <h5>Correo electrónico</h5>
-                                <input type="text">
+                                <input type="text" name="correo" required>
                                 <h5>Contraseña</h5>
-                                <input type="text">
+                                <input type="password" name="pass" required>
                             </div>
                             <br>
-                            <button>
+                            <button value="i" name="accion">
                                 <img src="img/letrero.png">
                                 <h3>Iniciar sesión</h3>
                             </button>
                         </form>
-                        <form>
+                        <form method="post" autocomplete="off" action="php/controlador/c_registro.php">
                             <div>
                                 <h5>Nombre</h5>
-                                <input type="text">
+                                <input type="text" name="nombre" required>
                                 <h5>Correo electrónico</h5>
-                                <input type="text">
+                                <input type="text" name="correo" required>
                                 <h5>Contraseña</h5>
-                                <input type="text">
+                                <input type="password" name="pass" required>
                             </div>
                             <p>
-                                <input type="checkbox">
+                                <input type="checkbox" name="tyc" required >
                                 Acepto los términos y condiciones
                             </p>
-                            <button>
+                            <button value="r" name="accion">
                                 <img src="img/letrero.png">
                                 <h3>Registrarme</h3>
                             </button>
