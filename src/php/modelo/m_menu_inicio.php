@@ -7,4 +7,10 @@
             parent::__construct();
         }
 
+        function cerrar_sesion(){
+            session_unset();
+            session_destroy();
+            session_start();
+        }
+
     }

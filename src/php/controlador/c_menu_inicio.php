@@ -10,4 +10,7 @@ class Controlador {
         $this->vista = "v_menu_inicio";
     }
 
+    function cerrar_sesion(){
+        $this->modelo->cerrar_sesion();
+    }
 }

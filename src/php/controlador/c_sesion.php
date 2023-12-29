@@ -9,5 +9,4 @@ class Controlador {
         $this->modelo = new Modelo();
         $this->vista = "v_sesion";
     }
-
 }

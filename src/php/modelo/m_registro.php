@@ -1,5 +1,6 @@
 <?php
 
+session_start();
 require_once __DIR__.'/conexion.php';
 
 class Modelo extends Conexion {
@@ -20,7 +21,7 @@ class Modelo extends Conexion {
     }
 
     function inicio_sesion($correo, $pass) {
-        $stmt = $this->conexion->prepare("SELECT id, correo, contrasenia FROM usuario WHERE correo = ?");
+        $stmt = $this->conexion->prepare("SELECT id, correo, contrasenia, nombre, oro FROM usuario WHERE correo = ?");
         $stmt->bind_param("s", $correo);
     
         if ($stmt->execute()) {
@@ -30,8 +31,12 @@ class Modelo extends Conexion {
                 $fila = $resultado->fetch_assoc();
     
                 if (password_verify($pass, $fila['contrasenia'])) {
-                    // No hay salida antes de header
-                    header("location:../../index.php?controlador=c_sesion&u=".$fila['id']);
+                    $_SESSION["id"] = $fila["id"];
+                    $_SESSION["correo"] = $fila["correo"];
+                    $_SESSION["nombre"] = $fila["nombre"];
+                    $_SESSION["oro"] = $fila["oro"];
+
+                    header("location:../../index.php?controlador=c_sesion");
                     exit;
                 } else {
                     echo "Contraseña no coincide";

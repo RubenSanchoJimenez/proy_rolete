@@ -11,10 +11,10 @@
         <div id="fondo_sesion">
             <main id="sesion_jugador">
                 <nav>
-                    <a href="index.php"><button><i class="fa-solid fa-dungeon fa-2xl" style="color: #ffffff;"></i></button></a>
+                    <a href="index.php?controlador=c_menu_inicio&action=cerrar_sesion"><button><i class="fa-solid fa-dungeon fa-2xl" style="color: #ffffff;"></i></button></a>
                     <button><i class="fa-solid fa-trash-can fa-2xl" style="color: #ffffff;"></i></button>
                     <div>
-                        <p>9999999</p>
+                        <p><?php echo $_SESSION["oro"]; ?></p>
                     </div>
                     <img src="img/moneda.png">
                 </nav>
